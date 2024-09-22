@@ -2,6 +2,11 @@ import React from 'react';
 import { useState } from 'react';
 import './App.css';
 import ValueDisplay from './components/ValueDisplay';
+
+
+
+
+
 function App() {
 
   const [inputValue, setInputValue] = useState("");
@@ -21,17 +26,27 @@ const handleBtnClick = () => {
 
   return (
     <div className="App">
-    <ValueDisplay value={inputValue}/>
 
+  <div className="App2">
   <input 
     type='text'
     value={inputValue}
     placeholder='Введите заметку'
     onChange={handleInputChange}
+    className="inputNote"
   />
-  <button onClick={handleBtnClick} >Сохранить</button>
-   {/* <p>Предыдущее значение: {displayValue}</p> */}
-   
+  
+  <button 
+  onClick={handleBtnClick} 
+  className="btnSave"
+  >Сохранить</button>
+
+  </div >
+<div className="valueDisp">
+<ValueDisplay value={inputValue}/>
+</div>
+ 
+
     </div>
   );
 }

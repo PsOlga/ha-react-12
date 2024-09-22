@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    margin-left: 2px;
+    font-size: 18px;
+    background-color: rgb(32, 78, 23);
+}
+
+.paragraph {
+    margin: 15px;
+    font-size: 18px;
+    color: white;
+}

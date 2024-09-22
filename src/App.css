@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* .valueDisp {
+    flex: 1;
+    margin: 10px;
+} */
+
+.App {
+    flex: 1;
+    display: flex;
+    width: 100vw;
+}
+
+.App2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(185, 223, 177);
+    height: 100vh;
+    width: 20vw;
+    flex: 1;
+}
+
+.inputNote {
+    display: flex;
+    margin-block: 20px;
+    padding: 5px;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 1px solid rgb(32, 78, 23);
+
+}
+
+.valueDisp {
+    width: 80%;
+}
+
+.inputNote::placeholder {
+    color: rgb(32, 78, 23);
+}
+
+.inputNote:focus {
+    outline: none;
+    border: 1px solid rgb(131, 121, 17);
+}
+
+
+.btnSave {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(32, 78, 23);
+    border: none;
+    border-bottom: 1px solid rgb(32, 78, 23);
+    border-radius: 2px;
+    padding: 5px;
+    box-shadow: 1px 1px 1px rgb(133, 133, 133);
+}
+
+.btnSave:hover {
+    transform: translateY(-1px);
+    background-color: rgb(32, 78, 23);
+    color: white;
+}

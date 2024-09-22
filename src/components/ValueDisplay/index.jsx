@@ -1,5 +1,6 @@
 import React from "react";
 import { useRef, useEffect } from "react";
+import styles from "./styles.module.css"
 
 function ValueDisplay({ value }){
   
@@ -12,9 +13,9 @@ useEffect(() => {
 const prevValue = prevValueRef.current;
 
 return (
-    <div>
-        <p >current value: {value}</p>
-        <p> Previous value: {prevValue}</p>
+    <div className={styles.container}>
+        <p className={styles.paragraph}>Current value:   {value}</p>
+        <p className={styles.paragraph}> Previous value:   {prevValue}</p>
     </div>
 )}
 export default ValueDisplay;
